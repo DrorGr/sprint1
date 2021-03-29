@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MineSweeper</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body onload="init(4)">
+  <div class="header">
+    <h1 data-text="Dror's MineSweeper"><span>Dror's MineSweeper</span></h1>
+
+  </div>
+  <div class="game-container" id="noContextMenu">
+    <div class="top-bar container">
+      <div class="mid-section">
+        <div class="level-selector">
+          <button onclick="changeLevel(4)">Easy</button>
+          <button onclick="changeLevel(8)">Medium</button>
+          <button onclick="changeLevel(12)">Hard</button>
+          <button onclick="restartGame()">Restart</button>
+        </div>
+
+      </div>
+      <div class="score-container">Mines:&#160;</br><span></span></div>
+      <div class="timer-container">Timer: &#160;</br><span>0</span></div>
+    </div>
+
+    <div class="board">
+      <div class="board-container"></div>
+    </div>
+    <div class="status-icon-container" onclick="init()"><img src="img/sun.jpg"></div>
+
+
+    <div class="lives-container"> Lives :&#160;</br><span></span></div>
+
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>

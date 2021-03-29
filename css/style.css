@@ -1,0 +1,397 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url("../img/background.jpg");
+    background-size:auto;
+}
+
+
+.game-container {
+    height: auto;
+    width: 600px;
+    margin: auto;
+    border:rgba(116, 80, 2, 0.466);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+}
+
+
+.level-selector {
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    float: center;
+    border:rgba(116, 80, 2, 0.466);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.level-selector button {
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    border:rgba(231, 159, 3, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    
+}
+
+
+.level-selector button:hover {
+    border: 5px solid rgba(255, 195, 31, 0.383);
+    border-width: 5px;
+
+}
+
+
+.score-container {
+    height: 2em;
+    width: 9em;
+    padding: 10px;
+ 
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    float: left;
+    border:rgba(116, 80, 2, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 9em;
+    padding: 10px;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    float: right;
+    border:rgba(116, 80, 2, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+}
+
+.timer-container {
+    height: 3em;
+    width: 9em;
+    padding: 10px;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    float: right;
+    border:rgba(116, 80, 2, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+}
+
+
+
+.timer-container span {
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+
+}
+
+.board {
+    margin-top: 100px;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+}
+
+table {
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    table-layout: fixed;
+    
+}
+
+table,
+tr,
+td {
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    border:rgba(231, 159, 3, 0.109);
+    border-width: 5px;
+    border-radius: 50px;
+    border-style:groove;
+    
+    
+}
+
+table,
+td {
+    height: 30px;
+    width: 30px;
+    
+}
+
+table :hover {
+    background-color: rgba(253, 143, 0, 0.329);
+    border-radius: 10px;
+}
+
+td {
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(216, 214, 214);
+ 
+}
+
+td span .zero {
+    background-color:  rgba(255, 208, 0, 0.26);
+}
+
+td :not(.clicked) {
+    background-color:  rgba(255, 208, 0, 0.26);
+}
+
+td .clicked {
+    visibility: hidden;
+}
+
+.status-icon-container {
+    height: 100px;
+    width: 600px;
+    margin: center;
+    background-image: url("../img/sand.jpg");
+    background-size: 600px;
+}
+
+.text-box {
+    width: 600px;
+    text-align: left;
+    color:  rgba(255, 208, 0, 0.26);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.status-icon-container img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    border:rgba(116, 80, 2, 0.616);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove
+}
+
+
+.level {
+    color:  rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.lives-container {
+    height: auto;
+    width: 580px;
+    padding: 8px;
+    background-image: url("../img/sand.jpg");
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    border:rgba(116, 80, 2, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+    
+    
+
+}
+
+.lives-container span {
+    color: rgba(255, 208, 0, 0.26);
+    font-size: 1.2em;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border:rgba(116, 80, 2, 0.205);
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:groove;
+    color: rgb(143, 90, 6);
+    text-decoration:wavy;
+    text-shadow: 5px 3px #000000da;
+    -webkit-text-stroke: 1px rgb(255, 214, 161);
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2.5px;
+
+    
+}
+ 
+.header {
+    padding: 50px;
+    text-align: top;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    align-items: top;
+    position: relative;
+    justify-content: center;
+}
+
+h1 {
+  
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: calc(20px + 5vw);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 0 0.25em #ffbb00;
+
+    user-select:auto;
+    white-space: nowrap;
+    filter: blur(0.007em);
+    animation: shake 2.5s linear forwards; 
+    animation-duration: 5s;
+ animation-iteration-count:infinite;
+ 
+}
+
+h1 span {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+            clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
+}
+
+h1::before,
+h1::after {
+    content: attr(data-text);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1::before {
+    animation: crack1 2.5s linear forwards;
+    -webkit-clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 10% 0%, 55% 100%, 0% 100%);
+}
+
+h1::after {
+    animation: crack2 2.5s linear forwards;
+    -webkit-clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+            clip-path: polygon(44% 0%, 100% 0%, 100% 100%, 70% 100%);
+}
+
+@keyframes shake {
+    5%, 15%, 25%, 35%, 55%, 65%, 75%, 95% {
+        filter: blur(0.018em);
+        transform: translateY(0.018em) rotate(0deg);
+    }
+
+    10%, 30%, 40%, 50%, 70%, 80%, 90% {
+        filter: blur(0.01em);
+        transform: translateY(-0.018em) rotate(0deg);
+    }
+
+    20%, 60% {
+        filter: blur(0.03em);
+        transform: translate(-0.018em, 0.018em) rotate(0deg);
+    }
+
+    45%, 85% {
+        filter: blur(0.03em);
+        transform: translate(0.018em, -0.018em) rotate(0deg);
+    }
+
+    100% {
+        filter: blur(0.007em);
+        transform: translate(0) rotate(-0.5deg);
+    }
+}
+
+@keyframes crack1 {
+    0%, 95% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-51%, -48%);
+    }
+}
+
+@keyframes crack2 {
+    0%, 95% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(-49%, -53%);
+    }
+    
+}
